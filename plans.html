@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raze Nodes | Basic Plans</title>
+    <link rel="shortcut icon" type="image/x-icon" href="front.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .back-to-home {
+            position: sticky;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.048);
+            padding: 10px 20px;
+            border-radius: 9px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+
+        }
+
+        .back-to-home:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+            text-shadow: 0 0 10px #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(0, 0, 0, 0);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        header:hover {
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            animation: fadeIn 2s;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            animation: fadeIn 2s;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            animation: fadeIn 2s;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+            text-shadow: 0 0 10px #fff;
+        }
+        
+       
+
+        .plans {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0);
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .plans h2 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .plan-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+            align-items: start;
+        }
+
+        .plan-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 350px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .plan-card:hover {
+            transform: scale(1.09);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .plan-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .plan-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .plan-card p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .plan-card .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .plan-card .btn {
+            width: 100%;
+            display: inline-block;
+            text-align: center;
+            padding: 12px 0;
+            background: linear-gradient(90deg, #ffdfba, #f89c20);
+            color: #000;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .plan-card .btn:hover {
+            background: linear-gradient(90deg, #ffe6b3, #fdbb2d);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 223, 186, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav class="nav-links">
+
+            <a href="/vpsplan.html">Vps Plans</a>
+
+        </nav>
+    </header>
+
+
+    <a href="home.html" class="back-to-home">Back To Home</a>
+    <section class="plans">
+        <h2>Raze Basic Plan</h2>
+        <p>Best Minecraft plans with the best price-to-performance ratio. Not even overpriced!</p>
+        <div class="plan-cards">
+            <div class="plan-card">
+                <img src="cobblestone.jpg" alt="Cobblestone Plan">
+                <h3>Cobblestone Plan</h3>
+                <p class="price">₹149.00</p>
+                <p>4 GB RAM</p>
+                <p>100% CPU Power</p>
+                <p>8 GB DISK</p>
+                <a href="https://billing.razenodes.shop/checkout/config/1" class="btn">Add to cart 🛒</a>
+            </div>
+            <div class="plan-card">
+                <img src="iron.jpg" alt="Iron Plan">
+                <h3>Iron Plan</h3>
+                <p class="price">₹249.00</p>
+                <p>6 GB RAM</p>
+                <p>150% CPU Power</p>
+                <p>12 GB DISK</p>
+                <a href="https://billing.razenodes.shop/checkout/config/2" class="btn">Add to cart 🛒</a>
+            </div>
+            <div class="plan-card">
+                <img src="redstone.jpg" alt="Redstone Plan">
+                <h3>Redstone Plan</h3>
+                <p class="price">₹349.00</p>
+                <p>8 GB RAM</p>
+                <p>250% CPU Power</p>
+                <p>20 GB DISK</p>
+                <p>1 Backup</p>
+                <a href="https://billing.razenodes.shop/checkout/config/3" class="btn">Add to cart 🛒</a>
+            </div>
+            <div class="plan-card">
+                <img src="diamond.jpg" alt="Diamond Plan">
+                <h3>Diamond Plan</h3>
+                <p class="price">₹499.00</p>
+                <p>16 GB RAM</p>
+                <p>400% CPU Power</p>
+                <p>25 GB DISK</p>
+                <p>1 Backup</p>
+                <p>1 Extra Port</p>
+                <p>Much Smoother Experience</p>
+                <a href="https://billing.razenodes.shop/checkout/config/4" class="btn">Add to cart 🛒</a>
+            </div>
+            <div class="plan-card">
+                <img src="emerald.jpg" alt="Emerald Plan">
+                <h3>Emerald Plan</h3>
+                <p class="price">₹949.00</p>
+                <p>32 GB RAM</p>
+                <p>750% CPU Power</p>
+                <p>50 GB DISK</p>
+                <p>2 Extra Ports</p>
+                <p>2 Backups</p>
+                <p>Better Performance</p>
+                <a href="https://billing.razenodes.shop/checkout/config/5" class="btn">Add to cart 🛒</a>
+            </div>
+            <div class="plan-card">
+                <img src="netherite.jpg" alt="Netherite Plan">
+                <h3>Netherite Plan</h3>
+                <p class="price">₹1,549.00</p>
+                <p>64 GB RAM</p>
+                <p>1500% CPU Power</p>
+                <p>100 GB DISK</p>
+                <p>2 Extra Ports</p>
+                <p>4 Backups</p>
+                <p>Better Performance</p>
+                <a href="https://billing.razenodes.shop/checkout/config/6" class="btn">Add to cart 🛒</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

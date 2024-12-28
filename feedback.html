@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width,initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="front.jpg" />
+    <title>Raze Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #70dcef;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s;
+    animation: fadeIn 2s;
+
+}
+
+.textup {
+    text-align: center;
+    text-shadow: 0 0 10px #fff;
+    font-weight: 700;
+    transition: all 0.3s;
+    animation: fadeIn 2s;
+
+}
+
+i {
+    margin-right: 3px;
+}
+
+.form-box {
+    background: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.671);
+    padding: 15px;
+    border-radius: 50px;
+    width: 500px;
+    transition: all 0.3s;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.radio-group {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    color: #f8f8f8;
+    text-shadow: 0 0 10px #fff;
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+button {
+    background-color: #fdbb2d;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    transition: .2s linear;
+}
+
+button:hover {
+    background-color: rgba(172, 15, 15, 0.26);
+    border: none;
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #ffdfba, #ffe6b3, #ffdfba);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px #ffe6b3, 0 0 20px #ffdfba, 0 0 30px #ffe6b3;
+            animation: glow 2s infinite alternate;
+}
+h3 {
+    text-shadow: 0 0 10px #fff;
+}
+
+.back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .back-to-home:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+</style>
+</head>
+
+<body>
+    <a href="home.html" class="back-to-home">⬅ Back to Home</a>
+    <h1>Raze Nodes Development</h1>
+    <h3>We Will Be Glad To Hear A Feddback
+        From You.. 
+        
+    </h3>
+    <div class="form-box">
+        <div class="textup">
+            <i class="fa fa-solid fa-clock"></i>
+            It only takes two minutes!!
+        </div>
+        <form>
+            <label for="uname">
+                <i class="fa fa-solid fa-user"></i>
+                Name
+            </label>
+            <input type="text" id="uname" 
+                   name="uname" required>
+
+            <label for="email">
+                <i class="fa fa-solid fa-envelope"></i>
+                Email Address
+            </label>
+            <input type="email" id="email" 
+                   name="email" required>
+
+            
+            <label>
+                <i class="fa-solid fa-face-smile"></i>
+                Are You Satisfied?
+            </label>
+            <div class="radio-group">
+                <input type="radio" id="yes" 
+                       name="satisfy" value="yes" checked>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" 
+                       name="satisfy" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <label for="msg">
+                <i class="fa-solid fa-comments" 
+                   style="margin-right: 3px;"></i>
+                Write your Suggestions:
+            </label>
+            <textarea id="msg" name="msg" 
+                      rows="4" cols="10" required>
+            </textarea>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
